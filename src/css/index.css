@@ -1,5 +1,9 @@
 @import './normalize.css';
 
+:root {
+	--BgSquare: #000;
+}
+
 body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -8,9 +12,21 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.app {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
 
 .square {
-	background-color: #000;
-	min-width: 255px;
+	background-color: var(--BgSquare);
+	border-radius: .2rem;
+	cursor: pointer;
 	min-height: 255px;
+	margin-top: 2rem;
+	transition: background-color .3s ease-in-out;
+	text-align: center;
+	width: 255px;
 }

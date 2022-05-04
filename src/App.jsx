@@ -1,11 +1,12 @@
+import { SquareComponent } from './components'
 
 function App() {
-
-  return (
-    <div>
-      <h1>App</h1>
-    </div>
-  )
+	return (
+		<div className='app' >
+			<h1>App</h1>
+			<SquareComponent />
+		</div>
+	)
 }
 
 export default App
